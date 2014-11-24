@@ -1,0 +1,198 @@
+/******************
+	GENERAL
+ *******************/
+
+body {
+	background:  url('../img/4.png') no-repeat center center;
+	background-size: cover !important;
+}
+#wrapper {
+	display: block;
+  	width: 600px;
+  	margin: 50px auto 0;
+  
+  	font-family: Arial, sans-serif;
+  	font-size: 1em;
+  	padding-left: 150px;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src:url("../font/Roboto-Light.ttf");
+}
+
+li {
+	list-style: none;
+}
+
+/*End of General Styling*/
+
+/*Styling the Heading*/
+h1 {
+	font-family: "Roboto", Arial, sans-serif;
+	font-weight: lighter;
+	font-size: 3em;
+	text-align: center;
+	margin-left: -180px;
+}
+/*End of Styling the Heading*/
+
+
+h5 {
+	text-align: center;
+	margin-left: -200px;
+}
+
+/*General Styling for the 3 p tags*/
+p {
+	width: 60%;
+	font-size: 1.3em; 
+	padding: 12px 20px 14px 20px; 
+	text-decoration: none; 
+	color: #fff; 
+	text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8)
+}
+
+
+/******************
+ Creating Gradients
+ *******************/
+.add {
+ 		margin-top: 40px;
+
+	/*Gradinet with Vendor Prefixes*/
+	background: rgb(109,179,242);
+	background: -moz-linear-gradient(top, rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(109,179,242,1)), color-stop(50%,rgba(84,163,238,1)), color-stop(51%,rgba(54,144,240,1)), color-stop(100%,rgba(30,105,222,1)));
+	background: -webkit-linear-gradient(top, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+	background: -o-linear-gradient(top, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+	background: -ms-linear-gradient(top, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+	background: linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+  	/*End of Gradinet with Vendor Prefixes*/
+
+	box-shadow: inset 0px 0px 0px 1px rgba(54,144,240,1), 0 1px 3px #333333; 
+}
+
+.all {
+
+	/*Gradinet with Vendor Prefixes*/
+	background: rgb(157,213,58);
+	background: -moz-linear-gradient(top, rgba(157,213,58,1) 0%, rgba(161,213,79,1) 50%, rgba(128,194,23,1) 51%, rgba(124,188,10,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(157,213,58,1)), color-stop(50%,rgba(161,213,79,1)), color-stop(51%,rgba(128,194,23,1)), color-stop(100%,rgba(124,188,10,1))); 
+	background: -webkit-linear-gradient(top, rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%); 
+	background: -o-linear-gradient(top, rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+	background: -ms-linear-gradient(top, rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+	background: linear-gradient(to bottom, rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+	/*End of Gradinet with Vendor Prefixes*/
+	
+	box-shadow: inset 0px 0px 0px 1px rgba(157,213,58,1), 0 1px 3px #333333;
+}
+
+.done {
+
+	/*Gradinet with Vendor Prefixes*/
+	background-image: -webkit-linear-gradient(top, #ee432e 0%, #c63929 50%,#b51700 50%, #891100 100%);
+	background-image: -moz-linear-gradient(top, #ee432e 0%, #c63929 50%,#b51700 50%, #891100 100%); 
+	background-image: -o-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%); 
+	background-image: linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%); 
+	/*End Gradinet with Vendor Prefixes*/
+	
+	box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333; 
+}
+/*End of Creating gradient*/
+
+
+/*Styling the texfield*/ 
+#itemInput {
+	height: 50px;
+	width: 300px;
+	margin-left: 20px;
+	font-size: 2em;
+	margin-right: 10px;
+	padding-left: 10px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid black
+}
+
+#itemInput:focus {
+	outline: none;
+}
+/*End of Textfield Styling*/
+
+/*Styling our Button*/
+ button {
+	height: 20px;
+	font-size: 1em;
+	background-color: transparent;
+	border:none;
+}
+
+button:hover {
+	text-decoration: underline;
+	color: #D35400;
+	outline: none;
+}
+/*End of Button Styling*/
+
+/*style for shopping list section*/
+#recentItems li {
+	margin-bottom: 20px;
+	border-bottom: 2px solid gray;
+	width: 60%;
+	padding-bottom: 15px;
+}
+
+/*Styling for Label*/
+label {
+	display: inline-block;
+}
+
+li label {
+	margin-left: 10px;
+	width: 150px;
+}
+
+#recentItems li label {
+	color: #446CB3;
+	font-weight: bolder;
+}
+
+#previousItems li label {
+	text-decoration: line-through;
+	color: red;
+}
+
+.editMode label {
+	display: none;
+}
+/*End of Styling for label*/
+
+
+/*Styling the input as required*/
+ul li input[type=text] {
+	display: none;
+}
+
+.editMode input[type=text] {
+	display: inline-block;
+	margin: 0 40px 0 10px;
+	width: 100px;
+	height: 25px;
+	padding-left: 5px; 
+}
+/*End of input Styling*/
+
+#previousItems li {
+	margin-bottom: 20px;
+	border-bottom: 2px solid gray;
+	width: 60%;
+	padding-bottom: 15px;
+}
+
+
+
+
+
+
+

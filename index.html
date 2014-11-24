@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>.:Web Shopping App:.</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<!-- The Total container for the structure for our three sections -->
+		<div id="wrapper">
+			<h1>The Shopping Web App.</h1>
+
+			<!-- Section to add new shopping items  -->
+			<div class="addItem">
+				<p class="add">Add New Shopping Item</p>
+				<input type="text" id = "itemInput" autofocus>
+				<button>Create</button>
+			</div>
+			<!-- End of adding section -->
+
+			<!-- Section of viewing all shopping list -->
+			<div id="allItem">
+				<p class="all">Shopping list</p>
+				<ul id="recentItems">
+					<li class="correct">
+						<input type="checkbox">
+						<label>Basket</label>
+						<input type="text">
+						<button class="edit">edit</button>
+						<button class="delete">delete</button>
+					</li>
+
+					<li class="editMode">
+						<input type="checkbox">
+						<label>Go Shopping</label>
+			          	<input type="text" value="Go Shopping">
+				        <button class="edit">edit</button>
+						<button class="delete">delete</button>
+        			</li>
+					
+				</ul>
+			</div>
+			<!-- End of all Shoping Items --> 
+
+
+			<!-- Section of already acquired Shopping items  -->
+			<div id = "acquired">
+				<p class="done">Items Acquired</p>
+				<ul id="previousItems">
+					<li>
+						<input type="checkbox" checked><label>Bag</label>
+			          	<input type="text">
+			          	<button class="edit">edit</button>
+			          	<button class="delete">delete</button>
+					</li>
+				</ul>
+			</div>
+			<!-- End of already acquired section shopping Items -->
+
+			<h5>&copy 2014 oluwadamilola.adebayo@andela.co</h5>
+		
+		</div>
+		<!-- end of container -->
+
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+
+</html>
