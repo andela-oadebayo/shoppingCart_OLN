@@ -42,25 +42,24 @@ var shoppingCart = {
     return listItem;
   },
 
-  addShopItem : function(self){
+  addShopItem : function(){
     console.log("add new shop item");
     //create a new list item with text from the new task
-    // console.log(self);
 
-    var inputs = self.shopItemInput.value;
+    var inputs = shoppingCart.shopItemInput.value;
     if (inputs == undefined || inputs == ""){
       alert("Pls type a valid item");
     }
     else{
-      var listItem = self.createNewItemElement(inputs);
-      self.unacquiredItemHolder.appendChild(listItem);
-      self.bindItemEvents(listItem, self.acquiredShopItem);
-      self.shopItemInput.value = "";    
+      var listItem = shoppingCart.createNewItemElement(inputs);
+      shoppingCart.unacquiredItemHolder.appendChild(listItem);
+      shoppingCart.bindItemEvents(listItem, shoppingCart.acquiredShopItem);
+      shoppingCart.shopItemInput.value = "";    
     }
   },
 
   editShopItem : function(){
-  console.log("edit shopping item");
+    console.log("edit shopping item");
 
     var listItem = this.parentNode;
     var editBtn = listItem.getElementsByTagName('button')[0];
@@ -101,8 +100,8 @@ var shoppingCart = {
     console.log("Item acquired...");
     //Append the task list item to the acquired section
     var listItem = this.parentNode;
-    this.acquiredItemHolder.appendChild(listItem); 
-    this.bindItemEvents(listItem, this.unacquiredShopItem);
+    shoppingCart.acquiredItemHolder.appendChild(listItem); 
+    shoppingCart.bindItemEvents(listItem, shoppingCart.unacquiredShopItem);
   },
 
   //Mark an item as unacquired
@@ -110,13 +109,13 @@ var shoppingCart = {
     console.log("Item not acquired...");
     //Append the task list item to the unacquired section
     var listItem = this.parentNode;
-    // unacquiredItemHolder.appendChild(listItem);
-    this.bindItemEvents(listItem, this.acquiredShopItem);
+    //shoppingCart.unacquiredItemHolder.appendChild(listItem);
+    shoppingCart.bindItemEvents(listItem, shoppingCart.acquiredShopItem);
   },
 
   bindItemEvents : function(itemList, checkBoxEventHandler){
-    console.log("Bind lits items....");
-    //select it's 
+    console.log("Bind list items....");
+    
     var checkBox = itemList.querySelector("input[type=checkbox]");
     var editButton = itemList.querySelector("button.edit");
     var deleteButton = itemList.querySelector("button.delete");
@@ -127,14 +126,13 @@ var shoppingCart = {
       //bind deleteShopItem to the delete button
       deleteButton.onclick = this.deleteShopItem;
 
-      //bind checkBoxEventHandler to checkbox 
-      checkBox.onchange = this.checkBoxEventHandler;
+      //bind checkBoxEventH andler to checkbox 
+      checkBox.onchange = checkBoxEventHandler;
   }
 };
 
-var self = shoppingCart;
 
-shoppingCart.addButton.onclick = shoppingCart.addShopItem(self);
+shoppingCart.addButton.onclick = shoppingCart.addShopItem;
 
 //transverse over unacquiredShopItem ul li items
 for(var i = 0; i < shoppingCart.unacquiredItemHolder.children.length; i++ ){
